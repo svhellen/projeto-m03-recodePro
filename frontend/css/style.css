@@ -1,0 +1,270 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor1: #5656ff;
+    /* --cor2: #4040ff; */
+    --cor2: #51ADE5;
+    /* --cor3: #060638; */
+    --cor3: #f3f3f3;
+    --cor4: #FFCF00;
+    --cor5: #4a8bb4;
+
+    --text-color1: rgba(0, 0, 0, 1);
+    --text-color2: rgba(0, 0, 0, 0.7);
+    --text-color3: rgba(0, 0, 0, 0.5);
+    --text-color4: rgba(0, 0, 0, 0.3);
+
+    --bg-color: rgba(255, 255, 255, 1);
+    --bg-color2:rgba(255, 255, 255, 0.5);
+    --bg-color3:#ebebeb;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--bg-color);
+}
+
+.icon {
+    width: 20px;
+}
+
+/* Barra de navegação */ 
+header {
+    margin: 0 !important;
+}
+
+#menu {
+    background-color: #51ADE5 !important;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 0;
+}
+
+.offcanvas-lg {
+    color: var(--text-color1);
+    background-color: var(--bg-color);
+}
+
+ .offcanvas-lg .offcanvas-header {
+    color: var(--text-color2);
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.offcanvas-lg a {
+    color: var(--text-color2) !important;
+}
+
+.offcanvas-lg .nav-item .active {
+    color: var(--text-color1) !important;
+    font-weight: bold !important;
+}
+
+.offcanvas-lg a:hover {
+    color: var(--text-color2);
+    font-weight: bold;
+}
+
+#offcanvas-btn {
+    color: var(--text-color1);
+    background-color: transparent !important;
+}
+
+.navbar,
+.navbar:hover {
+    background: var(--cor3) !important;
+}
+
+#logo,
+#perfil {
+    width: 80px;
+}
+
+.navbar-brand {
+    font-weight: 700;
+} 
+
+.navbar-brand:hover, 
+#navbarNav a:hover {
+    font-weight: 700;
+}
+
+.nav-expand-lg, 
+.navbar-nav, 
+.nav-link { 
+    padding: 1rem .8rem;
+}
+
+.btn {
+    background: var(--cor2);
+    border: var(--cor2);
+}
+
+.btn:hover {
+    color: var(--text-color1);
+    background: var(--cor4);
+    border: var(--cor4);
+}
+
+.login ul {
+    list-style: none;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.login .nav-item .nav-link {
+    color: var(--bg-color) !important;
+    background: var(--cor5);
+    padding: .6rem 1rem;
+    border-radius: .3rem;
+}
+
+.login .nav-item .nav-link:hover,
+.login .nav-item .active {
+    color: var(--cor4) !important;
+    background: transparent;
+    border: 1px solid var(--cor4);
+}
+
+#carousel-principal {
+    padding: 0 !important;
+}
+
+.carousel-item {
+    height: 100%;
+    background: var(--bg-color) no-repeat center center/cover;
+    
+}
+
+#div-form {
+    background: var(--cor3);
+}
+
+form {
+    background: var(--bg-color);
+    border-radius: 5px;
+    max-width: 1100px;
+}
+
+.form-nav {
+    width: 48%;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#hospedagens .card,
+#promocoes .card,
+#passagens .card,
+#destinos .card {
+    background: var(--bg-color);
+    min-width: 230px !important;
+    margin: 0 1rem 1rem 0;
+}
+
+#hospedagens .card img,
+#promocoes .card img,
+#passagens .card img {
+    height: 180px;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#ver-mais .btn {
+    font-size: .8em;
+    color: var(--text-color1);
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 25px;
+    margin: 10px 0;
+}
+
+#ver-mais a:hover {
+    background: var(--cor4);
+    font-size: 1em;
+    margin: 8px 0;
+}
+
+.rate {
+    display: inline;
+    color: #fff;
+    background: rgb(0, 164, 0);
+    border-radius: 5px;
+    padding: 0px 5px;
+    margin-right: 5px;
+}
+
+.bi-star-fill,
+.bi-star-half,
+.bi-star {
+    color: #FFCF00;
+}
+
+.balao-promo {
+    color: #fff;
+    background: red;
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+/* footer */
+footer {
+    color: var(--text-color3);
+    text-align: center;
+    background: var(--cor3);
+}
+
+#footer-logo {
+    width: 200px;
+}
+
+footer a {
+    color: var(--text-color3) !important;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--text-color2) !important;
+    text-decoration: underline;
+}
+
+footer i, footer i:hover {
+    font-size: 1.2em;
+}
+
+@media (min-width: 994px) {
+    
+    .offcanvas-lg {
+      background: transparent !important;
+    }
+
+    .offcanvas-lg a {
+      color: var(--bg-color2) !important;
+    }
+
+    .offcanvas-lg .nav-item .active {
+      color: var(--bg-color) !important;
+      font-weight: bold;
+    }
+
+    .offcanvas-lg a:hover {
+      color: rgba(255, 255, 255, 0.7) !important;
+      font-weight: bold;
+    }
+    
+}
